@@ -3,6 +3,6 @@
 ################################################################################
 
 /packages
-/API_PowerBI_AzureAD/obj/Debug
-/API_PowerBI_AzureAD/bin
+*/bin
 /.vs
+*/obj
