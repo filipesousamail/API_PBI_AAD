@@ -16,7 +16,7 @@ namespace API_PowerBI_AzureAD
     {
         public void ConfigureAuth(IAppBuilder app)
         {
-            var authUri = "https://login.windows.net";
+            var authUri = "https://login.windows.net"; 
 
             app.UseWindowsAzureActiveDirectoryBearerAuthentication(
                 new WindowsAzureActiveDirectoryBearerAuthenticationOptions
