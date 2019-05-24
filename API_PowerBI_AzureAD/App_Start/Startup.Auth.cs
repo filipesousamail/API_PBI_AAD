@@ -16,7 +16,10 @@ namespace API_PowerBI_AzureAD
     {
         public void ConfigureAuth(IAppBuilder app)
         {
-            var authUri = "https://login.windows.net"; //"https://login.microsoftonline.com/devscope365.onmicrosoft.com/oauth2/authorize";
+            var authUri = "https://login.microsoftonline.com/devscope365.onmicrosoft.com/oauth2/authorize";
+                //"https://login.windows.net";
+            //"https://login.microsoftonline.com/09e251dc-5e87-48bf-b4d2-71b01adb984a/oauth2/v2.0/token";
+            // //"https://login.microsoftonline.com/devscope365.onmicrosoft.com/oauth2/authorize";
 
             app.UseWindowsAzureActiveDirectoryBearerAuthentication(
                 new WindowsAzureActiveDirectoryBearerAuthenticationOptions
@@ -26,8 +29,14 @@ namespace API_PowerBI_AzureAD
                         ValidAudience = ConfigurationManager.AppSettings["ida:Audience"]
                     },
                     Provider = new OAuthBearerAuthenticationProvider {
-                        OnApplyChallenge = async (context) => 
-                            context.OwinContext.Response.Headers.Add("WWW-Authenticate", new string[1] { $"Bearer authorization_uri=\"{authUri}\"" })
+                        OnApplyChallenge = async (context) => {
+                            context.OwinContext.Response.Headers.Add("WWW-Authenticate", new string[1] { $"Bearer authorization_uri=\"{authUri}\"" });
+                        },
+                        OnValidateIdentity = async (context) => {
+                            //System.Diagnostics.Debugger.Launch();
+                            //var authUserId = context.OwinContext.Authentication.User.Claims
+                            //    .FirstOrDefault(c => c.Type.Equals("upn?!"));
+                        }
                     },
                 });
 
