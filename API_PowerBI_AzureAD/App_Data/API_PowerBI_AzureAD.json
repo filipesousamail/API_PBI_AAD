@@ -1,0 +1,110 @@
+{
+	"id": "3a438b70-61c2-4efc-8b96-8da2c147139b",
+	"acceptMappedClaims": null,
+	"accessTokenAcceptedVersion": null,
+	"addIns": [],
+	"allowPublicClient": false,
+	"appId": "01bf28d3-aa96-43be-801b-98c0fddd48ac",
+	"appRoles": [],
+	"oauth2AllowUrlPathMatching": false,
+	"createdDateTime": "2019-05-23T15:41:12Z",
+	"groupMembershipClaims": null,
+	"identifierUris": [
+		"https://apipowerbiaad.local.devscope.net:44313",
+		"https://apipowerbiaad.devscope.net",
+		"https://DevScope365.onmicrosoft.com/API_PowerBI_AzureAD"
+	],
+	"informationalUrls": {
+		"termsOfService": null,
+		"support": null,
+		"privacy": null,
+		"marketing": null
+	},
+	"keyCredentials": [],
+	"knownClientApplications": [],
+	"logoUrl": null,
+	"logoutUrl": null,
+	"name": "API_PowerBI_AzureAD",
+	"oauth2AllowIdTokenImplicitFlow": true,
+	"oauth2AllowImplicitFlow": false,
+	"oauth2Permissions": [
+		{
+			"adminConsentDescription": "Allow the application to access API_PowerBI_AzureAD on behalf of the signed-in user.",
+			"adminConsentDisplayName": "Access API_PowerBI_AzureAD",
+			"id": "8da9bfac-f537-4205-bdf1-a8a5983924f9",
+			"isEnabled": true,
+			"lang": null,
+			"origin": "Application",
+			"type": "User",
+			"userConsentDescription": "Allow the application to access API_PowerBI_AzureAD on your behalf.",
+			"userConsentDisplayName": "Access API_PowerBI_AzureAD",
+			"value": "user_impersonation"
+		}
+	],
+	"oauth2RequirePostResponse": false,
+	"optionalClaims": null,
+	"orgRestrictions": [],
+	"parentalControlSettings": {
+		"countriesBlockedForMinors": [],
+		"legalAgeGroupRule": "Allow"
+	},
+	"passwordCredentials": [
+		{
+			"customKeyIdentifier": null,
+			"endDate": "2020-05-23T15:41:10.6678908Z",
+			"keyId": "d2f29f25-164c-410b-92a0-156d8e36b565",
+			"startDate": "2019-05-23T15:41:10.6668913Z",
+			"value": null,
+			"createdOn": null,
+			"hint": null,
+			"displayName": null
+		}
+	],
+	"preAuthorizedApplications": [
+		{
+			"appId": "00000009-0000-0000-c000-000000000000",
+			"permissionIds": [
+				"8da9bfac-f537-4205-bdf1-a8a5983924f9"
+			]
+		},
+		{
+			"appId": "f3b07414-6bf4-46e6-b63f-56941f3f4128",
+			"permissionIds": [
+				"8da9bfac-f537-4205-bdf1-a8a5983924f9"
+			]
+		},
+		{
+			"appId": "01bf28d3-aa96-43be-801b-98c0fddd48ac",
+			"permissionIds": [
+				"8da9bfac-f537-4205-bdf1-a8a5983924f9"
+			]
+		}
+	],
+	"publisherDomain": "DevScope365.onmicrosoft.com",
+	"replyUrlsWithType": [
+		{
+			"url": "https://apipowerbiaad.devscope.net",
+			"type": "Web"
+		},
+		{
+			"url": "https://localhost:44313/",
+			"type": "Web"
+		}
+	],
+	"requiredResourceAccess": [
+		{
+			"resourceAppId": "00000002-0000-0000-c000-000000000000",
+			"resourceAccess": [
+				{
+					"id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+					"type": "Scope"
+				}
+			]
+		}
+	],
+	"samlMetadataUrl": null,
+	"signInUrl": "https://localhost:44313/",
+	"signInAudience": "AzureADMultipleOrgs",
+	"tags": [],
+	"tokenEncryptionKeyId": null
+}
