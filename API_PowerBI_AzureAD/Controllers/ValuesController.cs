@@ -16,7 +16,8 @@ namespace API_PowerBI_AzureAD.Controllers
             return new Dictionary<string, string> {
                 { "CPU", "1" },
                 { "Memory", ".8" },
-                { "Disk", ".45" }
+                { "Disk", ".45" },
+                { "LastRefreshed", DateTime.Now.ToString() }
             };
         }
     }
